@@ -6,15 +6,10 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react()],
-
-    // 让 Vite 使用正确的目录结构（根目录 = 项目根目录）
-    root: '',
-
     build: {
       outDir: 'dist',
       emptyOutDir: true
     },
-
     resolve: {
       alias: {
         '@': '/src'
